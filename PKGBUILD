@@ -21,8 +21,8 @@ prepare() {
 build() {
   cd ${pkgname}
   sed -i 's/gl >= 7.1.0/gl/g' configure.ac
-  export CPLUS_INCLUDE_PATH=/usr/iclude/android:/usr/include/android/hybris
-  export C_INCLUDE_PATH=/usr/iclude/android:/usr/include/android/hybris
+  export CPLUS_INCLUDE_PATH=/usr/include/android:/usr/include/android/hybris
+  export C_INCLUDE_PATH=/usr/include/android:/usr/include/android/hybris
   ./configure --prefix=/usr
   make
 }
